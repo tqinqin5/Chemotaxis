@@ -40,11 +40,8 @@ class Bacteria
   void move(){
     dx = mouseX - x;
     dy = mouseY - y;
-    if(dx != 0 && dy !=0){
     vx += Math.signum(dx);
     vy += Math.signum(dy);
-    }
-    
       while(vx>10){
         vx -= .1;
       }
