@@ -19,8 +19,7 @@ void draw(){
 }  
 class Bacteria    
 {
-  int x, y, size;
-  double vx, vy;
+  int x, y, size, vx, vy;
   Bacteria(){
     x = (int)(Math.random()*dim);
     y = (int)(Math.random()*dim);
@@ -43,16 +42,16 @@ class Bacteria
     vx += Math.signum(dx);
     vy += Math.signum(dy);
       while(vx>10){
-        vx -= .1;
+        vx -= 1;
       }
       while(vy>10){
-        vy -= .1;
+        vy -= 1;
       }
       while(vx<-10){
-        vx += .1;
+        vx += 1;
       }
       while(vy<-10){
-        vy += .1;
+        vy += 1;
       }
       
     x += vx;
