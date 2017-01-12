@@ -54,7 +54,7 @@ class Bacteria
         vy += 1;
       }
       
-    x += vx;
-    y += vy;
+    x += vx + (int)(Math.random()*5)-2;
+    y += vy + (int)(Math.random()*5)-2;
   }
 }    
