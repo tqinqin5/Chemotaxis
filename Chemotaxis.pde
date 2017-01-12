@@ -1,4 +1,4 @@
-int dim = 600, dx, dy;
+int dim = 600, dx, dy, col;
 Bacteria[] ar; 
 void setup(){     
   noStroke();
@@ -28,10 +28,10 @@ class Bacteria
     size = (int)(Math.random()*20) + 1;
   }
   void show(){
-    
-    fill(255-(int)(Math.random()*100),255-(int)(Math.random()*1-0),255-(int)(Math.random()*100));
+    col = 255-(int)(Math.random()*100);
+    fill(col,col,col);
     ellipse(x,y,size,size);
-    fill(255,255,255,30);
+    fill(col,col,col,30);
     ellipse(x,y,3*size,3*size);
 
     
@@ -57,4 +57,4 @@ class Bacteria
     x += vx + (int)(Math.random()*5)-2;
     y += vy + (int)(Math.random()*5)-2;
   }
-}    
+}   
